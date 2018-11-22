@@ -1,0 +1,1010 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED45AFB0219D512600C36443 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED45AFAD219D512600C36443 /* AlamofireObjectMapper.framework */; };
+		ED45AFB1219D512600C36443 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED45AFAE219D512600C36443 /* Alamofire.framework */; };
+		ED45AFB2219D512600C36443 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED45AFAF219D512600C36443 /* ObjectMapper.framework */; };
+		ED45AFBB219D629200C36443 /* Conso.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9780B1219C9E8C000ECF0C /* Conso.swift */; };
+		ED45AFBD219D62D600C36443 /* Conso.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9780B1219C9E8C000ECF0C /* Conso.swift */; };
+		ED45AFBF219D640F00C36443 /* ViniDetailsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED45AFBE219D640F00C36443 /* ViniDetailsFetcher.swift */; };
+		ED4C394D219C017800BC3C81 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4C394A219C017800BC3C81 /* Alamofire.framework */; };
+		ED4C394E219C017800BC3C81 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4C394B219C017800BC3C81 /* ObjectMapper.framework */; };
+		ED4C394F219C017800BC3C81 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4C394C219C017800BC3C81 /* AlamofireObjectMapper.framework */; };
+		ED556268219D7B64002A7931 /* ViniDetailsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED45AFBE219D640F00C36443 /* ViniDetailsFetcher.swift */; };
+		ED556269219D7B7A002A7931 /* ViniDetailsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED45AFBE219D640F00C36443 /* ViniDetailsFetcher.swift */; };
+		ED5F8B4721A298F500BB112D /* HoreConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F8B4621A298F500BB112D /* HoreConstants.swift */; };
+		ED8CF023219CFA35002BF165 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED8CF021219CFA35002BF165 /* Interface.storyboard */; };
+		ED8CF025219CFA36002BF165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED8CF024219CFA36002BF165 /* Assets.xcassets */; };
+		ED8CF02C219CFA37002BF165 /* Hore Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ED8CF02B219CFA37002BF165 /* Hore Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ED8CF031219CFA37002BF165 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8CF030219CFA37002BF165 /* InterfaceController.swift */; };
+		ED8CF033219CFA37002BF165 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8CF032219CFA37002BF165 /* ExtensionDelegate.swift */; };
+		ED8CF035219CFA37002BF165 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8CF034219CFA37002BF165 /* NotificationController.swift */; };
+		ED8CF037219CFA37002BF165 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8CF036219CFA37002BF165 /* ComplicationController.swift */; };
+		ED8CF039219CFA38002BF165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED8CF038219CFA38002BF165 /* Assets.xcassets */; };
+		ED8CF03E219CFA38002BF165 /* Hore Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = ED8CF01F219CFA35002BF165 /* Hore Watch.app */; };
+		ED9780AC219C9DA3000ECF0C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4C394A219C017800BC3C81 /* Alamofire.framework */; };
+		ED9780AD219C9DA3000ECF0C /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4C394C219C017800BC3C81 /* AlamofireObjectMapper.framework */; };
+		ED9780AE219C9DA3000ECF0C /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4C394B219C017800BC3C81 /* ObjectMapper.framework */; };
+		ED9780B2219C9EE6000ECF0C /* Conso.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9780B1219C9E8C000ECF0C /* Conso.swift */; };
+		EDACC6D621A2AAB0002271C2 /* HoreConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F8B4621A298F500BB112D /* HoreConstants.swift */; };
+		EDACC6D721A2AADF002271C2 /* HoreConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F8B4621A298F500BB112D /* HoreConstants.swift */; };
+		EDE95C9A219BA477000EC9F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE95C99219BA477000EC9F6 /* AppDelegate.swift */; };
+		EDE95C9C219BA477000EC9F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE95C9B219BA477000EC9F6 /* ViewController.swift */; };
+		EDE95C9F219BA477000EC9F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE95C9D219BA477000EC9F6 /* Main.storyboard */; };
+		EDE95CA1219BA478000EC9F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE95CA0219BA478000EC9F6 /* Assets.xcassets */; };
+		EDE95CA4219BA478000EC9F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE95CA2219BA478000EC9F6 /* LaunchScreen.storyboard */; };
+		EDE95CB2219BAD6A000EC9F6 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE95CB1219BAD69000EC9F6 /* NotificationCenter.framework */; };
+		EDE95CB5219BAD6A000EC9F6 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE95CB4219BAD6A000EC9F6 /* TodayViewController.swift */; };
+		EDE95CB8219BAD6A000EC9F6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE95CB6219BAD6A000EC9F6 /* MainInterface.storyboard */; };
+		EDE95CBC219BAD6A000EC9F6 /* Hore Mon Forfait Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EDE95CAF219BAD69000EC9F6 /* Hore Mon Forfait Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED8CF02D219CFA37002BF165 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDE95C8E219BA476000EC9F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED8CF02A219CFA37002BF165;
+			remoteInfo = "Hore Watch Extension";
+		};
+		ED8CF03C219CFA38002BF165 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDE95C8E219BA476000EC9F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED8CF01E219CFA35002BF165;
+			remoteInfo = "Hore Watch";
+		};
+		EDE95CBA219BAD6A000EC9F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDE95C8E219BA476000EC9F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDE95CAE219BAD69000EC9F6;
+			remoteInfo = "Hore Mon Forfait Widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ED8CF044219CFA38002BF165 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ED8CF02C219CFA37002BF165 /* Hore Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED8CF046219CFA38002BF165 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				ED8CF03E219CFA38002BF165 /* Hore Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDE95CC0219BAD6A000EC9F6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EDE95CBC219BAD6A000EC9F6 /* Hore Mon Forfait Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		ED45AFAD219D512600C36443 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/watchOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
+		ED45AFAE219D512600C36443 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/watchOS/Alamofire.framework; sourceTree = "<group>"; };
+		ED45AFAF219D512600C36443 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/watchOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		ED45AFB7219D600200C36443 /* Hore Mon Forfait.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hore Mon Forfait.entitlements"; sourceTree = "<group>"; };
+		ED45AFB8219D618000C36443 /* Hore Mon Forfait Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hore Mon Forfait Widget.entitlements"; sourceTree = "<group>"; };
+		ED45AFB9219D618B00C36443 /* Hore Watch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hore Watch.entitlements"; sourceTree = "<group>"; };
+		ED45AFBA219D619300C36443 /* Hore Watch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hore Watch Extension.entitlements"; sourceTree = "<group>"; };
+		ED45AFBE219D640F00C36443 /* ViniDetailsFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViniDetailsFetcher.swift; sourceTree = "<group>"; };
+		ED4C394A219C017800BC3C81 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		ED4C394B219C017800BC3C81 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		ED4C394C219C017800BC3C81 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
+		ED5F8B4621A298F500BB112D /* HoreConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoreConstants.swift; sourceTree = "<group>"; };
+		ED8CF01F219CFA35002BF165 /* Hore Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hore Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED8CF022219CFA35002BF165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		ED8CF024219CFA36002BF165 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED8CF026219CFA37002BF165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED8CF02B219CFA37002BF165 /* Hore Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Hore Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED8CF030219CFA37002BF165 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		ED8CF032219CFA37002BF165 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		ED8CF034219CFA37002BF165 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		ED8CF036219CFA37002BF165 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		ED8CF038219CFA38002BF165 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED8CF03A219CFA38002BF165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED8CF03B219CFA38002BF165 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		ED9780B1219C9E8C000ECF0C /* Conso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conso.swift; sourceTree = "<group>"; };
+		EDE95C96219BA477000EC9F6 /* Hore Mon Forfait.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hore Mon Forfait.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDE95C99219BA477000EC9F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDE95C9B219BA477000EC9F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EDE95C9E219BA477000EC9F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDE95CA0219BA478000EC9F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDE95CA3219BA478000EC9F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDE95CA5219BA478000EC9F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDE95CAF219BAD69000EC9F6 /* Hore Mon Forfait Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Hore Mon Forfait Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDE95CB1219BAD69000EC9F6 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		EDE95CB4219BAD6A000EC9F6 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		EDE95CB7219BAD6A000EC9F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		EDE95CB9219BAD6A000EC9F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED8CF028219CFA37002BF165 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED45AFB0219D512600C36443 /* AlamofireObjectMapper.framework in Frameworks */,
+				ED45AFB1219D512600C36443 /* Alamofire.framework in Frameworks */,
+				ED45AFB2219D512600C36443 /* ObjectMapper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDE95C93219BA477000EC9F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED4C394D219C017800BC3C81 /* Alamofire.framework in Frameworks */,
+				ED4C394E219C017800BC3C81 /* ObjectMapper.framework in Frameworks */,
+				ED4C394F219C017800BC3C81 /* AlamofireObjectMapper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDE95CAC219BAD69000EC9F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDE95CB2219BAD6A000EC9F6 /* NotificationCenter.framework in Frameworks */,
+				ED9780AC219C9DA3000ECF0C /* Alamofire.framework in Frameworks */,
+				ED9780AD219C9DA3000ECF0C /* AlamofireObjectMapper.framework in Frameworks */,
+				ED9780AE219C9DA3000ECF0C /* ObjectMapper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED4C3953219C0F4500BC3C81 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				ED9780B1219C9E8C000ECF0C /* Conso.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		ED8CF020219CFA35002BF165 /* Hore Watch */ = {
+			isa = PBXGroup;
+			children = (
+				ED45AFB9219D618B00C36443 /* Hore Watch.entitlements */,
+				ED8CF021219CFA35002BF165 /* Interface.storyboard */,
+				ED8CF024219CFA36002BF165 /* Assets.xcassets */,
+				ED8CF026219CFA37002BF165 /* Info.plist */,
+			);
+			path = "Hore Watch";
+			sourceTree = "<group>";
+		};
+		ED8CF02F219CFA37002BF165 /* Hore Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ED45AFBA219D619300C36443 /* Hore Watch Extension.entitlements */,
+				ED8CF030219CFA37002BF165 /* InterfaceController.swift */,
+				ED8CF032219CFA37002BF165 /* ExtensionDelegate.swift */,
+				ED8CF034219CFA37002BF165 /* NotificationController.swift */,
+				ED8CF036219CFA37002BF165 /* ComplicationController.swift */,
+				ED8CF038219CFA38002BF165 /* Assets.xcassets */,
+				ED8CF03A219CFA38002BF165 /* Info.plist */,
+				ED8CF03B219CFA38002BF165 /* PushNotificationPayload.apns */,
+			);
+			path = "Hore Watch Extension";
+			sourceTree = "<group>";
+		};
+		EDE95C8D219BA476000EC9F6 = {
+			isa = PBXGroup;
+			children = (
+				EDE95C98219BA477000EC9F6 /* Hore Mon Forfait */,
+				EDE95CB3219BAD6A000EC9F6 /* Hore Mon Forfait Widget */,
+				ED8CF020219CFA35002BF165 /* Hore Watch */,
+				ED8CF02F219CFA37002BF165 /* Hore Watch Extension */,
+				EDE95CB0219BAD69000EC9F6 /* Frameworks */,
+				EDE95C97219BA477000EC9F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDE95C97219BA477000EC9F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDE95C96219BA477000EC9F6 /* Hore Mon Forfait.app */,
+				EDE95CAF219BAD69000EC9F6 /* Hore Mon Forfait Widget.appex */,
+				ED8CF01F219CFA35002BF165 /* Hore Watch.app */,
+				ED8CF02B219CFA37002BF165 /* Hore Watch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDE95C98219BA477000EC9F6 /* Hore Mon Forfait */ = {
+			isa = PBXGroup;
+			children = (
+				ED45AFB7219D600200C36443 /* Hore Mon Forfait.entitlements */,
+				ED4C3953219C0F4500BC3C81 /* model */,
+				EDE95C99219BA477000EC9F6 /* AppDelegate.swift */,
+				EDE95C9B219BA477000EC9F6 /* ViewController.swift */,
+				EDE95C9D219BA477000EC9F6 /* Main.storyboard */,
+				EDE95CA0219BA478000EC9F6 /* Assets.xcassets */,
+				EDE95CA2219BA478000EC9F6 /* LaunchScreen.storyboard */,
+				EDE95CA5219BA478000EC9F6 /* Info.plist */,
+				ED45AFBE219D640F00C36443 /* ViniDetailsFetcher.swift */,
+				ED5F8B4621A298F500BB112D /* HoreConstants.swift */,
+			);
+			path = "Hore Mon Forfait";
+			sourceTree = "<group>";
+		};
+		EDE95CB0219BAD69000EC9F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED4C394A219C017800BC3C81 /* Alamofire.framework */,
+				ED45AFAE219D512600C36443 /* Alamofire.framework */,
+				ED4C394C219C017800BC3C81 /* AlamofireObjectMapper.framework */,
+				ED4C394B219C017800BC3C81 /* ObjectMapper.framework */,
+				ED45AFAD219D512600C36443 /* AlamofireObjectMapper.framework */,
+				ED45AFAF219D512600C36443 /* ObjectMapper.framework */,
+				EDE95CB1219BAD69000EC9F6 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDE95CB3219BAD6A000EC9F6 /* Hore Mon Forfait Widget */ = {
+			isa = PBXGroup;
+			children = (
+				ED45AFB8219D618000C36443 /* Hore Mon Forfait Widget.entitlements */,
+				EDE95CB4219BAD6A000EC9F6 /* TodayViewController.swift */,
+				EDE95CB6219BAD6A000EC9F6 /* MainInterface.storyboard */,
+				EDE95CB9219BAD6A000EC9F6 /* Info.plist */,
+			);
+			path = "Hore Mon Forfait Widget";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED8CF01E219CFA35002BF165 /* Hore Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED8CF045219CFA38002BF165 /* Build configuration list for PBXNativeTarget "Hore Watch" */;
+			buildPhases = (
+				ED8CF01D219CFA35002BF165 /* Resources */,
+				ED8CF044219CFA38002BF165 /* Embed App Extensions */,
+				ED45AFB4219D516700C36443 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED8CF02E219CFA37002BF165 /* PBXTargetDependency */,
+			);
+			name = "Hore Watch";
+			productName = "Hore Watch";
+			productReference = ED8CF01F219CFA35002BF165 /* Hore Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		ED8CF02A219CFA37002BF165 /* Hore Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED8CF043219CFA38002BF165 /* Build configuration list for PBXNativeTarget "Hore Watch Extension" */;
+			buildPhases = (
+				ED8CF027219CFA37002BF165 /* Sources */,
+				ED8CF028219CFA37002BF165 /* Frameworks */,
+				ED8CF029219CFA37002BF165 /* Resources */,
+				ED45AFB3219D513000C36443 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hore Watch Extension";
+			productName = "Hore Watch Extension";
+			productReference = ED8CF02B219CFA37002BF165 /* Hore Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		EDE95C95219BA477000EC9F6 /* Hore Mon Forfait */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDE95CA8219BA478000EC9F6 /* Build configuration list for PBXNativeTarget "Hore Mon Forfait" */;
+			buildPhases = (
+				EDE95C92219BA477000EC9F6 /* Sources */,
+				EDE95C93219BA477000EC9F6 /* Frameworks */,
+				EDE95C94219BA477000EC9F6 /* Resources */,
+				EDE95CC0219BAD6A000EC9F6 /* Embed App Extensions */,
+				ED4C3950219C019B00BC3C81 /* ShellScript */,
+				ED8CF046219CFA38002BF165 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDE95CBB219BAD6A000EC9F6 /* PBXTargetDependency */,
+				ED8CF03D219CFA38002BF165 /* PBXTargetDependency */,
+			);
+			name = "Hore Mon Forfait";
+			productName = "Hore Mon Forfait";
+			productReference = EDE95C96219BA477000EC9F6 /* Hore Mon Forfait.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDE95CAE219BAD69000EC9F6 /* Hore Mon Forfait Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDE95CBD219BAD6A000EC9F6 /* Build configuration list for PBXNativeTarget "Hore Mon Forfait Widget" */;
+			buildPhases = (
+				EDE95CAB219BAD69000EC9F6 /* Sources */,
+				EDE95CAC219BAD69000EC9F6 /* Frameworks */,
+				EDE95CAD219BAD69000EC9F6 /* Resources */,
+				ED9780AF219C9DB6000ECF0C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hore Mon Forfait Widget";
+			productName = "Hore Mon Forfait Widget";
+			productReference = EDE95CAF219BAD69000EC9F6 /* Hore Mon Forfait Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDE95C8E219BA476000EC9F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Paraita;
+				TargetAttributes = {
+					ED8CF01E219CFA35002BF165 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					ED8CF02A219CFA37002BF165 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					EDE95C95219BA477000EC9F6 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					EDE95CAE219BAD69000EC9F6 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = EDE95C91219BA476000EC9F6 /* Build configuration list for PBXProject "Hore Mon Forfait" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDE95C8D219BA476000EC9F6;
+			productRefGroup = EDE95C97219BA477000EC9F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDE95C95219BA477000EC9F6 /* Hore Mon Forfait */,
+				EDE95CAE219BAD69000EC9F6 /* Hore Mon Forfait Widget */,
+				ED8CF01E219CFA35002BF165 /* Hore Watch */,
+				ED8CF02A219CFA37002BF165 /* Hore Watch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED8CF01D219CFA35002BF165 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED8CF025219CFA36002BF165 /* Assets.xcassets in Resources */,
+				ED8CF023219CFA35002BF165 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED8CF029219CFA37002BF165 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED8CF039219CFA38002BF165 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDE95C94219BA477000EC9F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDE95CA4219BA478000EC9F6 /* LaunchScreen.storyboard in Resources */,
+				EDE95CA1219BA478000EC9F6 /* Assets.xcassets in Resources */,
+				EDE95C9F219BA477000EC9F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDE95CAD219BAD69000EC9F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDE95CB8219BAD6A000EC9F6 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ED45AFB3219D513000C36443 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/watchOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/watchOS/AlamofireObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/watchOS/ObjectMapper.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/AlamofireObjectMapper.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncarthage copy-frameworks\n";
+		};
+		ED45AFB4219D516700C36443 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/watchOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/watchOS/AlamofireObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/watchOS/ObjectMapper.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/AlamofireObjectMapper.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncarthage copy-frameworks\n";
+		};
+		ED4C3950219C019B00BC3C81 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/AlamofireObjectMapper.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncarthage copy-frameworks\n";
+		};
+		ED9780AF219C9DB6000ECF0C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/AlamofireObjectMapper.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncarthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED8CF027219CFA37002BF165 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDACC6D721A2AADF002271C2 /* HoreConstants.swift in Sources */,
+				ED556269219D7B7A002A7931 /* ViniDetailsFetcher.swift in Sources */,
+				ED45AFBD219D62D600C36443 /* Conso.swift in Sources */,
+				ED8CF035219CFA37002BF165 /* NotificationController.swift in Sources */,
+				ED8CF037219CFA37002BF165 /* ComplicationController.swift in Sources */,
+				ED8CF033219CFA37002BF165 /* ExtensionDelegate.swift in Sources */,
+				ED8CF031219CFA37002BF165 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDE95C92219BA477000EC9F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED45AFBF219D640F00C36443 /* ViniDetailsFetcher.swift in Sources */,
+				ED9780B2219C9EE6000ECF0C /* Conso.swift in Sources */,
+				EDE95C9C219BA477000EC9F6 /* ViewController.swift in Sources */,
+				EDE95C9A219BA477000EC9F6 /* AppDelegate.swift in Sources */,
+				ED5F8B4721A298F500BB112D /* HoreConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDE95CAB219BAD69000EC9F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDACC6D621A2AAB0002271C2 /* HoreConstants.swift in Sources */,
+				ED556268219D7B64002A7931 /* ViniDetailsFetcher.swift in Sources */,
+				ED45AFBB219D629200C36443 /* Conso.swift in Sources */,
+				EDE95CB5219BAD6A000EC9F6 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED8CF02E219CFA37002BF165 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED8CF02A219CFA37002BF165 /* Hore Watch Extension */;
+			targetProxy = ED8CF02D219CFA37002BF165 /* PBXContainerItemProxy */;
+		};
+		ED8CF03D219CFA38002BF165 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED8CF01E219CFA35002BF165 /* Hore Watch */;
+			targetProxy = ED8CF03C219CFA38002BF165 /* PBXContainerItemProxy */;
+		};
+		EDE95CBB219BAD6A000EC9F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDE95CAE219BAD69000EC9F6 /* Hore Mon Forfait Widget */;
+			targetProxy = EDE95CBA219BAD6A000EC9F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ED8CF021219CFA35002BF165 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED8CF022219CFA35002BF165 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		EDE95C9D219BA477000EC9F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDE95C9E219BA477000EC9F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDE95CA2219BA478000EC9F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDE95CA3219BA478000EC9F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EDE95CB6219BAD6A000EC9F6 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDE95CB7219BAD6A000EC9F6 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED8CF03F219CFA38002BF165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Hore Watch/Hore Watch.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66S33T67HD;
+				IBSC_MODULE = Hore_Watch_Extension;
+				INFOPLIST_FILE = "Hore Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hipopochat.Hore-Mon-Forfait.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		ED8CF040219CFA38002BF165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Hore Watch/Hore Watch.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66S33T67HD;
+				IBSC_MODULE = Hore_Watch_Extension;
+				INFOPLIST_FILE = "Hore Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hipopochat.Hore-Mon-Forfait.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		ED8CF041219CFA38002BF165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Hore Watch Extension/Hore Watch Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66S33T67HD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				INFOPLIST_FILE = "Hore Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hipopochat.Hore-Mon-Forfait.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		ED8CF042219CFA38002BF165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Hore Watch Extension/Hore Watch Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66S33T67HD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				INFOPLIST_FILE = "Hore Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hipopochat.Hore-Mon-Forfait.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		EDE95CA6219BA478000EC9F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EDE95CA7219BA478000EC9F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDE95CA9219BA478000EC9F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Hore Mon Forfait/Hore Mon Forfait.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66S33T67HD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Hore Mon Forfait/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hipopochat.Hore-Mon-Forfait";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDE95CAA219BA478000EC9F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Hore Mon Forfait/Hore Mon Forfait.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66S33T67HD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Hore Mon Forfait/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hipopochat.Hore-Mon-Forfait";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EDE95CBE219BAD6A000EC9F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Hore Mon Forfait Widget/Hore Mon Forfait Widget.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66S33T67HD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Hore Mon Forfait Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hipopochat.Hore-Mon-Forfait.Hore-Mon-Forfait-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDE95CBF219BAD6A000EC9F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Hore Mon Forfait Widget/Hore Mon Forfait Widget.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66S33T67HD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Hore Mon Forfait Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hipopochat.Hore-Mon-Forfait.Hore-Mon-Forfait-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED8CF043219CFA38002BF165 /* Build configuration list for PBXNativeTarget "Hore Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED8CF041219CFA38002BF165 /* Debug */,
+				ED8CF042219CFA38002BF165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED8CF045219CFA38002BF165 /* Build configuration list for PBXNativeTarget "Hore Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED8CF03F219CFA38002BF165 /* Debug */,
+				ED8CF040219CFA38002BF165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDE95C91219BA476000EC9F6 /* Build configuration list for PBXProject "Hore Mon Forfait" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDE95CA6219BA478000EC9F6 /* Debug */,
+				EDE95CA7219BA478000EC9F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDE95CA8219BA478000EC9F6 /* Build configuration list for PBXNativeTarget "Hore Mon Forfait" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDE95CA9219BA478000EC9F6 /* Debug */,
+				EDE95CAA219BA478000EC9F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDE95CBD219BAD6A000EC9F6 /* Build configuration list for PBXNativeTarget "Hore Mon Forfait Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDE95CBE219BAD6A000EC9F6 /* Debug */,
+				EDE95CBF219BAD6A000EC9F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDE95C8E219BA476000EC9F6 /* Project object */;
+}
