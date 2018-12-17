@@ -69,6 +69,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         remainingValue.text = "\(cache.double(forKey: .horeCacheLastRemaining))Mb"
         totalValue.text = "\(cache.double(forKey: .horeCacheLastTotal))Mb"
         consoPercent.text = "\(String(format: "%.2f", cache.double(forKey: .horeCacheLastConsumedPct) * 100.0))%"
+        progressBar.progress = cache.float(forKey: .horeCacheLastConsumedPct)
     }
     
     fileprivate func saveToCache(_ conso: Conso) {
