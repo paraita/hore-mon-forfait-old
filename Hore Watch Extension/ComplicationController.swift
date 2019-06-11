@@ -36,11 +36,12 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK: - Timeline Population
     
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
-        
-        if complication.family == .modularSmall {
-            let template = CLKComplicationTemplateModularSmallRingText()
-            template.textProvider = CLKSimpleTextProvider(text: "4G")
-            
+        print("toto")
+        if complication.family == .graphicCircular {
+            print("getCurrentTimelineEntry")
+            let template = CLKComplicationTemplateGraphicCircularClosedGaugeText()
+            template.centerTextProvider = CLKSimpleTextProvider(text: "4G")
+
             self.viniDetailsFetcher.fetchConso {conso in
                 
                 if conso != nil {
@@ -48,7 +49,8 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
                     let newTotal = Float(conso?.monthlyAmount! ?? -1)
                     let newConsumedPct = newConsumed / newTotal
                     
-                    template.fillFraction = newConsumedPct
+                    let gauge = CLKSimpleGaugeProvider.init(style: .ring, gaugeColor: .red, fillFraction: 1.0 - newConsumedPct)
+                    template.gaugeProvider = gauge
                     print("newConsumed: \(newConsumed)")
                     print("newTotal: \(newTotal)")
                     print("Just updated complication: \(newConsumedPct)")
@@ -76,18 +78,20 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     func getLocalizableSampleTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
         // This method will be called once per supported complication, and the results will be cached
         
-        if complication.family == .modularSmall {
-            let template = CLKComplicationTemplateModularSmallRingText()
-            template.ringStyle = .closed
+        if complication.family == .graphicCircular {
+            print("getLocalizableSampleTemplate")
+            let template = CLKComplicationTemplateGraphicCircularClosedGaugeText()
             if let lastConsumedPct = userDefaults.string(forKey: "lastConsumedPct") {
                 print("Using \(lastConsumedPct) value for the complication !")
-                template.fillFraction = Float(lastConsumedPct)!
+                let gauge = CLKSimpleGaugeProvider.init(style: .ring, gaugeColor: .red, fillFraction: 1.0 - Float(lastConsumedPct)!)
+                template.gaugeProvider = gauge
             }
             else {
                 print("No cached value found for the complication...")
-                template.fillFraction = 0.0
+                let gauge = CLKSimpleGaugeProvider.init(style: .ring, gaugeColor: .red, fillFraction: 1.0)
+                template.gaugeProvider = gauge
             }
-            template.textProvider = CLKSimpleTextProvider(text: "V")
+            template.centerTextProvider = CLKSimpleTextProvider(text: "4G")
             handler(template)
         }
         else {

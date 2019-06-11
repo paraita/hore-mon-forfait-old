@@ -69,3 +69,6 @@ fastlane/test_output
 
 Carthage
 Hore Mon Forfait.xcodeproj/xcuserdata/paraita.xcuserdatad/xcdebugger
+
+*/*.entitlements
+

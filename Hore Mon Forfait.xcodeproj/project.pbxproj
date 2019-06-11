@@ -13,9 +13,6 @@
 		ED45AFBB219D629200C36443 /* Conso.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9780B1219C9E8C000ECF0C /* Conso.swift */; };
 		ED45AFBD219D62D600C36443 /* Conso.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9780B1219C9E8C000ECF0C /* Conso.swift */; };
 		ED45AFBF219D640F00C36443 /* ViniDetailsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED45AFBE219D640F00C36443 /* ViniDetailsFetcher.swift */; };
-		ED4C394D219C017800BC3C81 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4C394A219C017800BC3C81 /* Alamofire.framework */; };
-		ED4C394E219C017800BC3C81 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4C394B219C017800BC3C81 /* ObjectMapper.framework */; };
-		ED4C394F219C017800BC3C81 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4C394C219C017800BC3C81 /* AlamofireObjectMapper.framework */; };
 		ED556268219D7B64002A7931 /* ViniDetailsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED45AFBE219D640F00C36443 /* ViniDetailsFetcher.swift */; };
 		ED556269219D7B7A002A7931 /* ViniDetailsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED45AFBE219D640F00C36443 /* ViniDetailsFetcher.swift */; };
 		ED5F8B4721A298F500BB112D /* HoreConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F8B4621A298F500BB112D /* HoreConstants.swift */; };
@@ -34,6 +31,10 @@
 		ED9780B2219C9EE6000ECF0C /* Conso.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9780B1219C9E8C000ECF0C /* Conso.swift */; };
 		EDACC6D621A2AAB0002271C2 /* HoreConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F8B4621A298F500BB112D /* HoreConstants.swift */; };
 		EDACC6D721A2AADF002271C2 /* HoreConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F8B4621A298F500BB112D /* HoreConstants.swift */; };
+		EDC981642295F023002F5572 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4C394A219C017800BC3C81 /* Alamofire.framework */; };
+		EDC981652295F023002F5572 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4C394C219C017800BC3C81 /* AlamofireObjectMapper.framework */; };
+		EDC981662295F023002F5572 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4C394B219C017800BC3C81 /* ObjectMapper.framework */; };
+		EDC981682295F023002F5572 /* UICircularProgressRing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC981672295F023002F5572 /* UICircularProgressRing.framework */; };
 		EDE95C9A219BA477000EC9F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE95C99219BA477000EC9F6 /* AppDelegate.swift */; };
 		EDE95C9C219BA477000EC9F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE95C9B219BA477000EC9F6 /* ViewController.swift */; };
 		EDE95C9F219BA477000EC9F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE95C9D219BA477000EC9F6 /* Main.storyboard */; };
@@ -106,13 +107,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		ED09A90B2297DBD400AB51E3 /* Hore Watch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hore Watch Extension.entitlements"; sourceTree = "<group>"; };
+		ED09A90C2297DBE000AB51E3 /* Hore Watch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hore Watch.entitlements"; sourceTree = "<group>"; };
+		ED09A90D2297DBEC00AB51E3 /* Hore Mon Forfait Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hore Mon Forfait Widget.entitlements"; sourceTree = "<group>"; };
+		ED09A90E2297DBF400AB51E3 /* Hore Mon Forfait.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hore Mon Forfait.entitlements"; sourceTree = "<group>"; };
 		ED45AFAD219D512600C36443 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/watchOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
 		ED45AFAE219D512600C36443 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/watchOS/Alamofire.framework; sourceTree = "<group>"; };
 		ED45AFAF219D512600C36443 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/watchOS/ObjectMapper.framework; sourceTree = "<group>"; };
-		ED45AFB7219D600200C36443 /* Hore Mon Forfait.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hore Mon Forfait.entitlements"; sourceTree = "<group>"; };
-		ED45AFB8219D618000C36443 /* Hore Mon Forfait Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hore Mon Forfait Widget.entitlements"; sourceTree = "<group>"; };
-		ED45AFB9219D618B00C36443 /* Hore Watch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hore Watch.entitlements"; sourceTree = "<group>"; };
-		ED45AFBA219D619300C36443 /* Hore Watch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hore Watch Extension.entitlements"; sourceTree = "<group>"; };
 		ED45AFBE219D640F00C36443 /* ViniDetailsFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViniDetailsFetcher.swift; sourceTree = "<group>"; };
 		ED4C394A219C017800BC3C81 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		ED4C394B219C017800BC3C81 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
@@ -131,6 +132,7 @@
 		ED8CF03A219CFA38002BF165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED8CF03B219CFA38002BF165 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		ED9780B1219C9E8C000ECF0C /* Conso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conso.swift; sourceTree = "<group>"; };
+		EDC981672295F023002F5572 /* UICircularProgressRing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UICircularProgressRing.framework; path = Carthage/Build/iOS/UICircularProgressRing.framework; sourceTree = "<group>"; };
 		EDE95C96219BA477000EC9F6 /* Hore Mon Forfait.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hore Mon Forfait.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE95C99219BA477000EC9F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDE95C9B219BA477000EC9F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -160,9 +162,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED4C394D219C017800BC3C81 /* Alamofire.framework in Frameworks */,
-				ED4C394E219C017800BC3C81 /* ObjectMapper.framework in Frameworks */,
-				ED4C394F219C017800BC3C81 /* AlamofireObjectMapper.framework in Frameworks */,
+				EDC981682295F023002F5572 /* UICircularProgressRing.framework in Frameworks */,
+				EDC981642295F023002F5572 /* Alamofire.framework in Frameworks */,
+				EDC981652295F023002F5572 /* AlamofireObjectMapper.framework in Frameworks */,
+				EDC981662295F023002F5572 /* ObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,7 +194,7 @@
 		ED8CF020219CFA35002BF165 /* Hore Watch */ = {
 			isa = PBXGroup;
 			children = (
-				ED45AFB9219D618B00C36443 /* Hore Watch.entitlements */,
+				ED09A90C2297DBE000AB51E3 /* Hore Watch.entitlements */,
 				ED8CF021219CFA35002BF165 /* Interface.storyboard */,
 				ED8CF024219CFA36002BF165 /* Assets.xcassets */,
 				ED8CF026219CFA37002BF165 /* Info.plist */,
@@ -202,7 +205,7 @@
 		ED8CF02F219CFA37002BF165 /* Hore Watch Extension */ = {
 			isa = PBXGroup;
 			children = (
-				ED45AFBA219D619300C36443 /* Hore Watch Extension.entitlements */,
+				ED09A90B2297DBD400AB51E3 /* Hore Watch Extension.entitlements */,
 				ED8CF030219CFA37002BF165 /* InterfaceController.swift */,
 				ED8CF032219CFA37002BF165 /* ExtensionDelegate.swift */,
 				ED8CF034219CFA37002BF165 /* NotificationController.swift */,
@@ -240,7 +243,7 @@
 		EDE95C98219BA477000EC9F6 /* Hore Mon Forfait */ = {
 			isa = PBXGroup;
 			children = (
-				ED45AFB7219D600200C36443 /* Hore Mon Forfait.entitlements */,
+				ED09A90E2297DBF400AB51E3 /* Hore Mon Forfait.entitlements */,
 				ED4C3953219C0F4500BC3C81 /* model */,
 				EDE95C99219BA477000EC9F6 /* AppDelegate.swift */,
 				EDE95C9B219BA477000EC9F6 /* ViewController.swift */,
@@ -257,6 +260,7 @@
 		EDE95CB0219BAD69000EC9F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EDC981672295F023002F5572 /* UICircularProgressRing.framework */,
 				ED4C394A219C017800BC3C81 /* Alamofire.framework */,
 				ED45AFAE219D512600C36443 /* Alamofire.framework */,
 				ED4C394C219C017800BC3C81 /* AlamofireObjectMapper.framework */,
@@ -271,7 +275,7 @@
 		EDE95CB3219BAD6A000EC9F6 /* Hore Mon Forfait Widget */ = {
 			isa = PBXGroup;
 			children = (
-				ED45AFB8219D618000C36443 /* Hore Mon Forfait Widget.entitlements */,
+				ED09A90D2297DBEC00AB51E3 /* Hore Mon Forfait Widget.entitlements */,
 				EDE95CB4219BAD6A000EC9F6 /* TodayViewController.swift */,
 				EDE95CB6219BAD6A000EC9F6 /* MainInterface.storyboard */,
 				EDE95CB9219BAD6A000EC9F6 /* Info.plist */,
@@ -378,6 +382,7 @@
 					};
 					ED8CF02A219CFA37002BF165 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -386,6 +391,7 @@
 					};
 					EDE95C95219BA477000EC9F6 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -394,6 +400,7 @@
 					};
 					EDE95CAE219BAD69000EC9F6 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -519,6 +526,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/AlamofireObjectMapper.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/UICircularProgressRing.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -526,6 +534,7 @@
 				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
 				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/AlamofireObjectMapper.framework",
 				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ObjectMapper.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/UICircularProgressRing.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -711,9 +720,9 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
 			};
 			name = Debug;
 		};
@@ -738,9 +747,9 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
 			};
 			name = Release;
 		};
@@ -881,7 +890,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hipopochat.Hore-Mon-Forfait";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -907,7 +916,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hipopochat.Hore-Mon-Forfait";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -931,7 +940,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hipopochat.Hore-Mon-Forfait.Hore-Mon-Forfait-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -955,7 +964,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hipopochat.Hore-Mon-Forfait.Hore-Mon-Forfait-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

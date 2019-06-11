@@ -26,8 +26,9 @@ class ViniDetailsFetcher {
             let parameters = ["content": "conso",
                               "msisdn": credentials.string(forKey: .horeCredentialsMsisdn)!,
                               "password": credentials.string(forKey: .horeCredentialsPassword)!]
-            let headers = ["content-type": "application/x-www-form-urlencoded"]
-            Alamofire.request(url, method: .post, parameters: parameters, encoding: URLEncoding.httpBody, headers: headers).validate().responseObject {
+            let headers: HTTPHeaders
+            headers = ["content-type": "application/x-www-form-urlencoded"]
+            AF.request(url, method: .post, parameters: parameters, encoding: URLEncoding.httpBody, headers: headers).validate().responseObject {
                 (response: DataResponse<Conso>) in
                 if let conso = response.result.value {
                     self.debug(conso)

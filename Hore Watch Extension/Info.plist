@@ -24,7 +24,7 @@
 	<string>$(PRODUCT_MODULE_NAME).ComplicationController</string>
 	<key>CLKComplicationSupportedFamilies</key>
 	<array>
-		<string>CLKComplicationFamilyModularSmall</string>
+		<string>CLKComplicationFamilyGraphicCircular</string>
 	</array>
 	<key>NSExtension</key>
 	<dict>
