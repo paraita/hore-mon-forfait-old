@@ -35,7 +35,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         }
     }
     
-    func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
+    func widgetPerformUpdate(completionHandler: @escaping (NCUpdateResult) -> Void) {
+        
+        print("Updating the widget...")
         
         self.viniDetailsFetcher.fetchConso {conso in
             
@@ -44,13 +46,15 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             let newTotal = Double(conso?.monthlyAmount! ?? -1)
             let newConsumedPct = newConsumed / newTotal
             
-            self.consumedValue.text = String(newConsumed) + "Mb"
-            self.remainingValue.text = String(newRemaining) + "Mb"
-            self.totalValue.text = String(newTotal) + "Mb"
+            self.consumedValue.text = String(newConsumed) + "Mo"
+            self.remainingValue.text = String(newRemaining) + "Mo"
+            self.totalValue.text = String(newTotal) + "Mo"
             self.consoPercent.text = String(format: "%.2f", newConsumedPct * 100) + "%"
             self.progressBar.progress = Float(newConsumedPct)
             
             self.saveToCache(conso!)
+            
+            print("Widget updated !")
             
             completionHandler(NCUpdateResult.newData)
         }
@@ -65,9 +69,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     // We assume the data exist in the cache
     fileprivate func loadFromCache() {
-        consumedValue.text = "\(cache.double(forKey: .horeCacheLastConsumed))Mb"
-        remainingValue.text = "\(cache.double(forKey: .horeCacheLastRemaining))Mb"
-        totalValue.text = "\(cache.double(forKey: .horeCacheLastTotal))Mb"
+        consumedValue.text = "\(cache.double(forKey: .horeCacheLastConsumed)) Mo"
+        remainingValue.text = "\(cache.double(forKey: .horeCacheLastRemaining)) Mo"
+        totalValue.text = "\(cache.double(forKey: .horeCacheLastTotal)) Mo"
         consoPercent.text = "\(String(format: "%.2f", cache.double(forKey: .horeCacheLastConsumedPct) * 100.0))%"
         progressBar.progress = cache.float(forKey: .horeCacheLastConsumedPct)
     }

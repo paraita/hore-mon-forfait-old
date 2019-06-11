@@ -75,10 +75,10 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
                 let newTotal = Double(conso?.monthlyAmount! ?? -1)
                 let newConsumedPct = newConsumed / newTotal
                 
-                self.remainingValue.setText(String(newRemaining) + "Mb")
-                self.consumedValue.setText(String(newConsumed) + "Mb")
+                self.remainingValue.setText(String(newRemaining) + " Mo")
+                self.consumedValue.setText(String(newConsumed) + " Mo")
                 self.consumedPct.setText(String(format: "%.2f", newConsumedPct * 100) + "%")
-                self.totalValue.setText(String(newTotal) + "Mb")
+                self.totalValue.setText(String(newTotal) + " Mo")
                 self.conso = conso
                 self.cacheConsoData(conso)
             }
@@ -86,7 +86,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     }
     
     fileprivate func cacheCredentials(msisdn: String, password: String) {
-        let userDefaults = UserDefaults(suiteName: "group.hipopochat.hore.mon.forfait")!
+        let userDefaults = UserDefaults(suiteName: .horeCacheSuiteName)!
         userDefaults.set(msisdn, forKey: "phoneNumber")
         userDefaults.set(password, forKey: "password")
         print("saved \(msisdn)/\(password)")
@@ -94,7 +94,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     
     fileprivate func cacheConsoData(_ conso: Conso?) {
         print("caching the conso")
-        let userDefaults = UserDefaults(suiteName: "group.hipopochat.hore.mon.forfait")!
+        let userDefaults = UserDefaults(suiteName: .horeCacheSuiteName)!
         
         if let toSave = conso {
             let consumedPct = Double(toSave.consumed!) / Double(toSave.monthlyAmount!)
@@ -114,15 +114,15 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     
     fileprivate func loadColdValues() {
         print("Reading from the cache...")
-        let userDefaults = UserDefaults(suiteName: "group.hipopochat.hore.mon.forfait")!
+        let userDefaults = UserDefaults(suiteName: .horeCacheSuiteName)!
         if let lastRemaining = userDefaults.string(forKey: coldCacheKey.REMAINING) {
-            self.remainingValue.setText(lastRemaining + "Mb")
+            self.remainingValue.setText(lastRemaining + " Mo")
         }
         else {
             self.remainingValue.setText("NOPE")
         }
         if let lastConsumed = userDefaults.string(forKey: coldCacheKey.CONSUMED) {
-            self.consumedValue.setText(lastConsumed + "Mb")
+            self.consumedValue.setText(lastConsumed + " Mo")
         }
         else {
             self.consumedValue.setText("NOPE")
@@ -134,7 +134,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
             self.consumedPct.setText("NOPE")
         }
         if let lastTotal = userDefaults.string(forKey: coldCacheKey.TOTAL) {
-            self.totalValue.setText(lastTotal + "Mb")
+            self.totalValue.setText(lastTotal + " Mo")
         }
         else {
             self.totalValue.setText("NOPE")

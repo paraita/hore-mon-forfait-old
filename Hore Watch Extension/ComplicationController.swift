@@ -13,7 +13,7 @@ import AlamofireObjectMapper
 class ComplicationController: NSObject, CLKComplicationDataSource {
     
     let viniDetailsFetcher: ViniDetailsFetcher = ViniDetailsFetcher()
-    let userDefaults: UserDefaults = UserDefaults(suiteName: "group.hipopochat.hore.mon.forfait")!
+    let userDefaults: UserDefaults = UserDefaults(suiteName: .horeCacheSuiteName)!
     
     // MARK: - Timeline Configuration
     
