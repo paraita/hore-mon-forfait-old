@@ -669,7 +669,7 @@
 				DEVELOPMENT_TEAM = 66S33T67HD;
 				IBSC_MODULE = Hore_Watch_Extension;
 				INFOPLIST_FILE = "Hore Watch/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hipopochat.Hore-Mon-Forfait.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.paraita.Hore-Mon-Forfait.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -689,7 +689,7 @@
 				DEVELOPMENT_TEAM = 66S33T67HD;
 				IBSC_MODULE = Hore_Watch_Extension;
 				INFOPLIST_FILE = "Hore Watch/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hipopochat.Hore-Mon-Forfait.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.paraita.Hore-Mon-Forfait.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -717,7 +717,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hipopochat.Hore-Mon-Forfait.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.paraita.Hore-Mon-Forfait.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
@@ -746,7 +746,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hipopochat.Hore-Mon-Forfait.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.paraita.Hore-Mon-Forfait.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
@@ -891,7 +891,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hipopochat.Hore-Mon-Forfait";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.paraita.Hore-Mon-Forfait";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -917,7 +917,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hipopochat.Hore-Mon-Forfait";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.paraita.Hore-Mon-Forfait";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -941,7 +941,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hipopochat.Hore-Mon-Forfait.Hore-Mon-Forfait-Widget";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.paraita.Hore-Mon-Forfait.Hore-Mon-Forfait-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -965,7 +965,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hipopochat.Hore-Mon-Forfait.Hore-Mon-Forfait-Widget";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.paraita.Hore-Mon-Forfait.Hore-Mon-Forfait-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
