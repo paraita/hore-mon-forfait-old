@@ -10,6 +10,7 @@ import UIKit
 import Alamofire
 import AlamofireObjectMapper
 import WatchConnectivity
+import os
 
 class ViewController: UIViewController, WCSessionDelegate, UITextFieldDelegate {
     
@@ -33,14 +34,14 @@ class ViewController: UIViewController, WCSessionDelegate, UITextFieldDelegate {
 
     @IBAction func saveCredentials(_ sender: Any) {
         if phoneNumber.hasText && password.hasText {
-            print("PhoneNumber and password filled ! saving...")
+            os_log("PhoneNumber and password filled ! saving...")
             self.credentials!.set(phoneNumber.text, forKey: .horeCredentialsMsisdn)
             self.credentials!.set(password.text, forKey: .horeCredentialsPassword)
-            print("saved credentials !")
+            os_log("saved credentials !")
             self.sendStuffToTheWatch()
         }
         else {
-            print("Didn't save anything because the phoneNumber or the password is missing")
+            os_log("Didn't save anything because the phoneNumber or the password is missing")
         }
     }
     
@@ -97,31 +98,31 @@ class ViewController: UIViewController, WCSessionDelegate, UITextFieldDelegate {
                                  "date": Date()]
                             )
                         } catch let error as NSError {
-                            print(error.description)
+                            os_log("error while fetching data from Vini: %@", type: .error, error.description)
                         }
                     }
                     else {
-                        print("cancelled (no msisdn/password to send)")
+                        os_log("cancelled (no msisdn/password to send)")
                     }
                 }
                 else {
-                    print("cancelled (no paired watch session)")
+                    os_log("cancelled (no paired watch session)")
                 }
             }
         }
     }
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        print("session opened !")
+        os_log("session opened !")
         self.sendStuffToTheWatch()
     }
     
     func sessionDidBecomeInactive(_ session: WCSession) {
-        print("session became inactive")
+        os_log("session became inactive")
     }
     
     func sessionDidDeactivate(_ session: WCSession) {
-        print("session is deactivated")
+        os_log("session is deactivated")
     }
 }
 

@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import Alamofire
 import AlamofireObjectMapper
+import os
 
 class ViniDetailsFetcher {
     
@@ -20,7 +21,7 @@ class ViniDetailsFetcher {
             let credentials = UserDefaults(suiteName: .horeCacheSuiteName)!
             guard let url = URL(string: "https://apps.vini.pf/SLFCR/APPS")
                 else {
-                    print("oops error creating the URL")
+                    os_log("error while creating the URL", type: .error)
                     return
             }
             let parameters = ["content": "conso",
@@ -35,12 +36,12 @@ class ViniDetailsFetcher {
                     completion(conso)
                 }
                 else {
-                    print("Error during the fetching of the conso")
+                    os_log("error during the fetching of the conso", type: .error)
                 }
             }
         }
         else {
-            print("Cancelling the fetching, no credentials found !")
+            os_log("Cancelling the fetching, no credentials found !")
         }
     }
     
@@ -51,9 +52,9 @@ class ViniDetailsFetcher {
     }
     
     fileprivate func debug(_ conso: Conso?) {
-        print("fetched conso:")
-        print(" consumed=\(conso!.consumed!)")
-        print(" remaining=\(conso!.remaining!)")
-        print(" monthlyAmount=\(conso!.monthlyAmount!)")
+        let consumed = conso!.consumed!
+        let remaining = conso!.remaining!
+        let monthlyAmount = conso!.monthlyAmount!
+        os_log("fetched conso: [consumed=%d, remaining=%d, monthlyAmount=%d]", type: .debug, consumed, remaining, monthlyAmount)
     }
 }
