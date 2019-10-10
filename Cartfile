@@ -1,4 +1,4 @@
-github "Alamofire/Alamofire" ~> 5.0
+github "Alamofire/Alamofire" ~> 5.0.0-rc.2
 github "tristanhimmelman/ObjectMapper" ~> 3.4
 github "tristanhimmelman/AlamofireObjectMapper" ~> 6.0
 github "luispadron/UICircularProgressRing" ~> 6.1

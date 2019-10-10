@@ -32,8 +32,13 @@ class ViniDetailsFetcher {
             AF.request(url, method: .post, parameters: parameters, encoding: URLEncoding.httpBody, headers: headers).validate().responseObject {
                 (response: DataResponse<Conso>) in
                 if let conso = response.result.value {
-                    self.debug(conso)
-                    completion(conso)
+                    if conso.consumed != nil && conso.monthlyAmount != nil && conso.remaining != nil {
+                        self.debug(conso)
+                        completion(conso)
+                    }
+                    else {
+                        os_log("error during the reading of the conso", type: .error)
+                    }
                 }
                 else {
                     os_log("error during the fetching of the conso", type: .error)
@@ -51,10 +56,10 @@ class ViniDetailsFetcher {
             credentials.string(forKey: .horeCredentialsPassword) != nil
     }
     
-    fileprivate func debug(_ conso: Conso?) {
-        let consumed = conso!.consumed!
-        let remaining = conso!.remaining!
-        let monthlyAmount = conso!.monthlyAmount!
+    fileprivate func debug(_ conso: Conso) {
+        let consumed = conso.consumed!
+        let remaining = conso.remaining!
+        let monthlyAmount = conso.monthlyAmount!
         os_log("fetched conso: [consumed=%d, remaining=%d, monthlyAmount=%d]", type: .debug, consumed, remaining, monthlyAmount)
     }
 }

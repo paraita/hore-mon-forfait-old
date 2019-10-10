@@ -13,9 +13,12 @@
 		ED45AFBB219D629200C36443 /* Conso.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9780B1219C9E8C000ECF0C /* Conso.swift */; };
 		ED45AFBD219D62D600C36443 /* Conso.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9780B1219C9E8C000ECF0C /* Conso.swift */; };
 		ED45AFBF219D640F00C36443 /* ViniDetailsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED45AFBE219D640F00C36443 /* ViniDetailsFetcher.swift */; };
+		ED4E2BCC234879E100DC072B /* InProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4E2BCB234879E100DC072B /* InProgressView.swift */; };
 		ED556268219D7B64002A7931 /* ViniDetailsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED45AFBE219D640F00C36443 /* ViniDetailsFetcher.swift */; };
 		ED556269219D7B7A002A7931 /* ViniDetailsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED45AFBE219D640F00C36443 /* ViniDetailsFetcher.swift */; };
 		ED5F8B4721A298F500BB112D /* HoreConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F8B4621A298F500BB112D /* HoreConstants.swift */; };
+		ED708126234728BE003C778E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED708125234728BE003C778E /* MainView.swift */; };
+		ED807C162344641800F10FD7 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED807C152344641800F10FD7 /* LogoutViewController.swift */; };
 		ED8CF023219CFA35002BF165 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED8CF021219CFA35002BF165 /* Interface.storyboard */; };
 		ED8CF025219CFA36002BF165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED8CF024219CFA36002BF165 /* Assets.xcassets */; };
 		ED8CF02C219CFA37002BF165 /* Hore Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ED8CF02B219CFA37002BF165 /* Hore Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -36,7 +39,7 @@
 		EDC981662295F023002F5572 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4C394B219C017800BC3C81 /* ObjectMapper.framework */; };
 		EDC981682295F023002F5572 /* UICircularProgressRing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC981672295F023002F5572 /* UICircularProgressRing.framework */; };
 		EDE95C9A219BA477000EC9F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE95C99219BA477000EC9F6 /* AppDelegate.swift */; };
-		EDE95C9C219BA477000EC9F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE95C9B219BA477000EC9F6 /* ViewController.swift */; };
+		EDE95C9C219BA477000EC9F6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE95C9B219BA477000EC9F6 /* LoginViewController.swift */; };
 		EDE95C9F219BA477000EC9F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE95C9D219BA477000EC9F6 /* Main.storyboard */; };
 		EDE95CA1219BA478000EC9F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE95CA0219BA478000EC9F6 /* Assets.xcassets */; };
 		EDE95CA4219BA478000EC9F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE95CA2219BA478000EC9F6 /* LaunchScreen.storyboard */; };
@@ -118,7 +121,10 @@
 		ED4C394A219C017800BC3C81 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		ED4C394B219C017800BC3C81 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		ED4C394C219C017800BC3C81 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
+		ED4E2BCB234879E100DC072B /* InProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressView.swift; sourceTree = "<group>"; };
 		ED5F8B4621A298F500BB112D /* HoreConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoreConstants.swift; sourceTree = "<group>"; };
+		ED708125234728BE003C778E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		ED807C152344641800F10FD7 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 		ED8CF01F219CFA35002BF165 /* Hore Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hore Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED8CF022219CFA35002BF165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		ED8CF024219CFA36002BF165 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -135,7 +141,7 @@
 		EDC981672295F023002F5572 /* UICircularProgressRing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UICircularProgressRing.framework; path = Carthage/Build/iOS/UICircularProgressRing.framework; sourceTree = "<group>"; };
 		EDE95C96219BA477000EC9F6 /* Hore Mon Forfait.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hore Mon Forfait.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE95C99219BA477000EC9F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EDE95C9B219BA477000EC9F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EDE95C9B219BA477000EC9F6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EDE95C9E219BA477000EC9F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDE95CA0219BA478000EC9F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDE95CA3219BA478000EC9F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -246,7 +252,10 @@
 				ED09A90E2297DBF400AB51E3 /* Hore Mon Forfait.entitlements */,
 				ED4C3953219C0F4500BC3C81 /* model */,
 				EDE95C99219BA477000EC9F6 /* AppDelegate.swift */,
-				EDE95C9B219BA477000EC9F6 /* ViewController.swift */,
+				EDE95C9B219BA477000EC9F6 /* LoginViewController.swift */,
+				ED4E2BCB234879E100DC072B /* InProgressView.swift */,
+				ED708125234728BE003C778E /* MainView.swift */,
+				ED807C152344641800F10FD7 /* LogoutViewController.swift */,
 				EDE95C9D219BA477000EC9F6 /* Main.storyboard */,
 				EDE95CA0219BA478000EC9F6 /* Assets.xcassets */,
 				EDE95CA2219BA478000EC9F6 /* LaunchScreen.storyboard */,
@@ -585,9 +594,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED45AFBF219D640F00C36443 /* ViniDetailsFetcher.swift in Sources */,
+				ED708126234728BE003C778E /* MainView.swift in Sources */,
 				ED9780B2219C9EE6000ECF0C /* Conso.swift in Sources */,
-				EDE95C9C219BA477000EC9F6 /* ViewController.swift in Sources */,
+				EDE95C9C219BA477000EC9F6 /* LoginViewController.swift in Sources */,
 				EDE95C9A219BA477000EC9F6 /* AppDelegate.swift in Sources */,
+				ED807C162344641800F10FD7 /* LogoutViewController.swift in Sources */,
+				ED4E2BCC234879E100DC072B /* InProgressView.swift in Sources */,
 				ED5F8B4721A298F500BB112D /* HoreConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
