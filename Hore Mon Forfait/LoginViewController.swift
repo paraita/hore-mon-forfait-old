@@ -34,12 +34,7 @@ class LoginViewController: UIViewController, WCSessionDelegate, UITextFieldDeleg
         self.setPhoneNumberKeyboard()
     }
     
-    fileprivate func startProgress() {
-        addChild(self.spinner)
-        self.spinner.view.frame = view.frame
-        view.addSubview(self.spinner.view)
-        self.spinner.didMove(toParent: self)
-    }
+    
     
     @IBAction func saveCredentials() {
         if phoneNumber.hasText && password.hasText {
@@ -67,7 +62,14 @@ class LoginViewController: UIViewController, WCSessionDelegate, UITextFieldDeleg
         os_log("Fin de la méthode !")
     }
     
-    func stopProgress() {
+    fileprivate func startProgress() {
+        addChild(self.spinner)
+        self.spinner.view.frame = view.frame
+        view.addSubview(self.spinner.view)
+        self.spinner.didMove(toParent: self)
+    }
+    
+    fileprivate func stopProgress() {
         DispatchQueue.main.async {
             self.spinner.willMove(toParent: nil)
             self.spinner.view.removeFromSuperview()
